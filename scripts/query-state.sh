@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-SECRET_KEY="../../test-1-ed25519-keys/public_key_hex"
+PUB_HEX="../../test-1-ed25519-keys/public_key_hex"
 NODE_ADDR="http://94.130.10.55:7777"
 
-ACCOUNT_HASH=$(casper-client account-address --public-key ${SECRET_KEY})
+ACCOUNT_HASH=$(casper-client account-address --public-key ${PUB_HEX})
 
 echo $ACCOUNT_HASH
 
