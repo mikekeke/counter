@@ -16,5 +16,4 @@ echo $ROOT_HASH
 casper-client query-state \
   --node-address ${NODE_ADDR} \
   --state-root-hash ${ROOT_HASH} \
-  --key ${ACCOUNT_HASH} \
-  -q $1 # "counter" or "counter/count"
+  --key deploy-$1
